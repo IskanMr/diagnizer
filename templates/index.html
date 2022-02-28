@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diagnizer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <style>
+      html,
+      body {
+        min-height: 100vh;
+        position: relative;
+      }
+    </style>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">Diagnizer</a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="bg-secondary" style="height: 100vh">
+      <div
+        class="container d-flex flex-row justify-content-between align-items-center"
+        style="height: 100%"
+      >
+        <div class="d-flex fle flex-column w-50 text-white">
+          <div class="fs-5">Selamat datang di</div>
+          <div class="fw-bold p-0 m-0" style="font-size: 63px">Diagnizer</div>
+          <div class="fs-5">
+            Diagnizer menyediakan diagnosis terhadap penyakit Malaria dan
+            Typhoid. Pengguna memasukan gejala yang dirasakan dan sistem akan
+            memberi tahu apakah pengguna memiliki Malaria atau Typhoid.
+          </div>
+          <div class="d-block mt-4">
+            <a href="#main">
+              <button type="button" class="btn btn-warning fw-normal">
+                Coba Diagnizer
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="w-50 d-flex justify-content-center align-items-center">
+          <img src="../static/img/fig.png" alt="figure" height="455px" />
+        </div>
+      </div>
+    </div>
+
+    <main id="main" class="container py-4" style="min-height: 100vh">
+      <h2 class="py-2">Pilih gejala yang anda alamai!</h2>
+      <form class="symptoms-list d-grid gap-1">
+        <div class="w-100">
+          <input
+            type="checkbox"
+            class="btn-check"
+            id="1"
+            value="1"
+            autocomplete="off"
+          />
+          <label class="btn btn-outline-primary w-100" for="1">Mual-mual</label>
+        </div>
+        <div class="w-100">
+          <input
+            type="checkbox"
+            class="btn-check"
+            id="2"
+            value="2"
+            autocomplete="off"
+          />
+          <label class="btn btn-outline-primary w-100" for="2">Mual-mual</label>
+        </div>
+        <div class="w-100">
+          <input
+            type="checkbox"
+            class="btn-check"
+            id="3"
+            value="3"
+            autocomplete="off"
+          />
+          <label class="btn btn-outline-primary w-100" for="3">Mual-mual</label>
+        </div>
+        <div class="mt-3">
+          <button type="button" class="btn btn-warning">
+            Cari tahu penyakit
+          </button>
+        </div>
+      </form>
+    </main>
+
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      Launch demo modal
+    </button>
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-white position-absolute end-0 py-2 mt-3 w-100">
+      <div class="container fs-6">
+        © 2022 Iskan Mustamir,
+        <a href="https://github.com/iskanmr" target="_blank" rel="norefferer"
+          >Docs</a
+        >
+      </div>
+    </footer>
+
+    <script></script>
+  </body>
+</html>
